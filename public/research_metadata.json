@@ -1,0 +1,1 @@
+{"total_products": 1094, "unique_queries": 44, "unique_asins": 1046, "rank_min": 1.0, "rank_max": 59.0, "oof_mae": 9.12, "oof_rmse": 12.08, "oof_r2": 0.21}

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base-bg: #F8FAFC; /* Slate 50 for app background */
+  --color-base-fg: #0F172A; /* Slate 900 for text */
+  
+  --color-brand-primary: #2563EB; /* Blue 600 */
+  --color-brand-secondary: #3B82F6; /* Blue 500 */
+  --color-brand-accent: #1D4ED8; /* Blue 700 */
+  
+  --color-risk-low: #059669; /* Emerald 600 */
+  --color-risk-medium: #F59E0B; /* Amber 500 */
+  --color-risk-high: #DC2626; /* Red 600 */
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-base-bg text-base-fg antialiased font-sans selection:bg-brand-primary/20 selection:text-brand-accent;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight font-bold text-slate-900;
+  }
+}
+
+/* Custom scrollbar - soft */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Organic Panel Style */
+.panel {
+  @apply bg-white border border-slate-200 rounded-xl shadow-sm;
+}
+
+.panel-header {
+  @apply px-6 py-5 border-b border-slate-100 flex items-center justify-between bg-white;
+}
+
+.panel-content {
+  @apply p-6;
+}

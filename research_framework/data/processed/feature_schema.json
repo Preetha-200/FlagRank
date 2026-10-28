@@ -1,0 +1,62 @@
+[
+  {
+    "feature_name": "feat_discounted",
+    "is_predictive": true,
+    "signal_type": "boolean"
+  },
+  {
+    "feature_name": "feat_sponsored",
+    "is_predictive": true,
+    "signal_type": "boolean"
+  },
+  {
+    "feature_name": "feat_price",
+    "is_predictive": true,
+    "signal_type": "numeric"
+  },
+  {
+    "feature_name": "feat_original_price",
+    "is_predictive": true,
+    "signal_type": "numeric"
+  },
+  {
+    "feature_name": "feat_savings_percent",
+    "is_predictive": true,
+    "signal_type": "numeric"
+  },
+  {
+    "feature_name": "feat_rating",
+    "is_predictive": true,
+    "signal_type": "numeric"
+  },
+  {
+    "feature_name": "feat_total_reviews_log",
+    "is_predictive": true,
+    "signal_type": "numeric"
+  },
+  {
+    "feature_name": "feat_brand_freq",
+    "is_predictive": true,
+    "signal_type": "categorical"
+  },
+  {
+    "feature_name": "feat_product_type_freq",
+    "is_predictive": true,
+    "signal_type": "categorical"
+  },
+  {
+    "feature_name": "feat_color_freq",
+    "is_predictive": true,
+    "signal_type": "categorical"
+  },
+  {
+    "feature_name": "feat_title_length",
+    "is_predictive": true,
+    "signal_type": "text"
+  },
+  {
+    "feature_name": "feat_title_query_overlap",
+    "is_predictive": true,
+    "signal_type": "text"
+  }
+]

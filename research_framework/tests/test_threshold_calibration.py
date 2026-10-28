@@ -1,0 +1,32 @@
+import os
+import pandas as pd
+import sys
+
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if base_dir not in sys.path:
+    sys.path.insert(0, base_dir)
+
+from src.analysis.synthetic_evaluation import setup_directories
+
+def test_threshold_calibration_outputs():
+    synth_dir, _ = setup_directories()
+    results_csv = os.path.join(synth_dir, 'threshold_calibration_results.csv')
+    results_md = os.path.join(synth_dir, 'threshold_calibration_results.md')
+    
+    assert os.path.exists(results_csv)
+    assert os.path.exists(results_md)
+    
+    df = pd.read_csv(results_csv)
+    assert not df.empty
+    
+    # Check that required columns exist
+    required_cols = [
+        'scenario', 'seed', 'threshold', 'tp', 'fp', 'fn', 'tn', 
+        'precision', 'recall', 'f1', 'fpr', 'collat_fpr'
+    ]
+    for c in required_cols:
+        assert c in df.columns
+        
+    # Check that thresholds are within the 50-99 range
+    assert df['threshold'].min() >= 50
+    assert df['threshold'].max() <= 100

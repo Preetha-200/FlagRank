@@ -1,0 +1,2 @@
+num_products,num_queries,mean_rank,median_rank,mean_score,median_score,std_score,flagged_85,flagged_92,flagged_99
+1094,44,16.8363802559415,13.0,50.04570383912249,48.83226691042048,23.200335304032162,94,40,4

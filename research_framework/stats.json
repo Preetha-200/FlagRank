@@ -1,0 +1,165 @@
+{
+  "file_format": "CSV",
+  "rows": 1094,
+  "cols": 24,
+  "columns": [
+    "query",
+    "amazon_rank",
+    "is_amazon_top6",
+    "asin",
+    "title",
+    "description",
+    "brand",
+    "product_type",
+    "price",
+    "currency",
+    "discounted",
+    "original_price",
+    "savings_percent",
+    "rating",
+    "total_reviews",
+    "amazon_choice",
+    "best_seller",
+    "amazon_prime",
+    "sponsored",
+    "color",
+    "features_raw",
+    "category",
+    "url",
+    "thumbnail"
+  ],
+  "dtypes": {
+    "query": "object",
+    "amazon_rank": "int64",
+    "is_amazon_top6": "bool",
+    "asin": "object",
+    "title": "object",
+    "description": "object",
+    "brand": "object",
+    "product_type": "object",
+    "price": "float64",
+    "currency": "object",
+    "discounted": "bool",
+    "original_price": "float64",
+    "savings_percent": "float64",
+    "rating": "float64",
+    "total_reviews": "int64",
+    "amazon_choice": "bool",
+    "best_seller": "bool",
+    "amazon_prime": "bool",
+    "sponsored": "bool",
+    "color": "object",
+    "features_raw": "float64",
+    "category": "object",
+    "url": "object",
+    "thumbnail": "object"
+  },
+  "missing_counts": {
+    "query": 0,
+    "amazon_rank": 0,
+    "is_amazon_top6": 0,
+    "asin": 0,
+    "title": 0,
+    "description": 0,
+    "brand": 52,
+    "product_type": 0,
+    "price": 0,
+    "currency": 0,
+    "discounted": 0,
+    "original_price": 0,
+    "savings_percent": 0,
+    "rating": 0,
+    "total_reviews": 0,
+    "amazon_choice": 0,
+    "best_seller": 0,
+    "amazon_prime": 0,
+    "sponsored": 0,
+    "color": 576,
+    "features_raw": 1094,
+    "category": 0,
+    "url": 0,
+    "thumbnail": 0
+  },
+  "missing_percentages": {
+    "query": 0.0,
+    "amazon_rank": 0.0,
+    "is_amazon_top6": 0.0,
+    "asin": 0.0,
+    "title": 0.0,
+    "description": 0.0,
+    "brand": 4.753199268738574,
+    "product_type": 0.0,
+    "price": 0.0,
+    "currency": 0.0,
+    "discounted": 0.0,
+    "original_price": 0.0,
+    "savings_percent": 0.0,
+    "rating": 0.0,
+    "total_reviews": 0.0,
+    "amazon_choice": 0.0,
+    "best_seller": 0.0,
+    "amazon_prime": 0.0,
+    "sponsored": 0.0,
+    "color": 52.6508226691042,
+    "features_raw": 100.0,
+    "category": 0.0,
+    "url": 0.0,
+    "thumbnail": 0.0
+  },
+  "duplicates": 0,
+  "unique_queries": 44,
+  "amazon_rank_range": [
+    1,
+    59
+  ],
+  "is_1_based": true,
+  "duplicated_ranks_within_query": false,
+  "continuous_ranks_within_query": true,
+  "unique_asins": 1046,
+  "numerical_fields": {
+    "price": {
+      "min": 0.0,
+      "max": 2922.08,
+      "mean": 156.75994515539307
+    },
+    "original_price": {
+      "min": 0.0,
+      "max": 2922.08,
+      "mean": 171.03587751371114
+    },
+    "savings_percent": {
+      "min": 0.0,
+      "max": 90.0,
+      "mean": 8.1136197440585
+    },
+    "rating": {
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 4.254021937842778
+    },
+    "total_reviews": {
+      "min": 0.0,
+      "max": 102800.0,
+      "mean": 3152.989945155393
+    }
+  },
+  "categorical_fields": {
+    "amazon_choice": {
+      "False": 1094
+    },
+    "best_seller": {
+      "False": 1094
+    },
+    "amazon_prime": {
+      "False": 1094
+    },
+    "sponsored": {
+      "False": 926,
+      "True": 168
+    },
+    "is_amazon_top6": {
+      "False": 832,
+      "True": 262
+    }
+  }
+}
